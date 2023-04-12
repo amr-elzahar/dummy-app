@@ -22,6 +22,7 @@ pipeline {
       stage('Push Image'){
          steps {
             sh 'docker push amrelzahar/dummy-app'
+            sh 'echo "FINISHED"'
          }
       }
    }
